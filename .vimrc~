@@ -1,0 +1,121 @@
+" get inspiration for vimrc from wnodom
+
+set nocompatible
+filetype plugin on
+filetype indent on
+source $VIMRUNTIME/vimrc_example.vim
+
+if has('win32')
+    set runtimepath=$HOME/.vim,$HOME/vimfiles,$VIM/vimfiles,$VIMRUNTIME,
+        \$VIM/vimfiles/after,$HOME/vimfiles/after
+    behave mswin      " behaviour for mouse and selection
+    "source $VIMRUNTIME/mswin.vim
+
+elseif has('mac')
+elseif has('unix')
+endif
+
+if has('gui_running')
+    " if you need to differentiate between tty mode and GUI mode
+endif
+
+" CTRL-X and SHIFT-Del are Cut
+vnoremap <C-X>      "+x
+vnoremap <S-Del>    "+x
+
+" CTRL-C and CTRL-Insert are Copy
+vnoremap <C-C>      "+y
+vnoremap <C-Insert> "+y
+
+" CTRL-V and SHIFT-Insert are Paste
+map <C-V>           "+gP
+map <S-Insert>      "+gP
+
+cmap <C-V>          <C-R>+
+cmap <S-Insert>     <C-R>+
+
+" Pasting blockwise and linewise selections is not possible in
+" Insert and Visual mode without the +virtualedit feature.  They are
+" pasted as if they were characterwise instead. Uses the paste.vim
+" autoload script.
+"
+exe 'inoremap <script> <C-V>' paste#paste_cmd['i']
+exe 'vnoremap <script> <C-V>' paste#paste_cmd['v']
+
+imap <S-Insert>     <C-V>
+vmap <S-Insert>     <C-V>
+
+" For CTRL-V to work autoselect must be off.
+" On Unix we have two selections, autoselect can be used.
+"
+if !has("unix")
+    set guioptions-=a
+endif
+
+" Use CTRL-Q to do what CTRL-V used to do
+"
+noremap <C-Q>       <C-V>
+
+" Control+Tab moves to the next window.
+"
+noremap  <C-Tab>    <C-W>w
+inoremap <C-Tab>    <C-O><C-W>w
+cnoremap <C-Tab>    <C-C><C-W>w
+onoremap <C-Tab>    <C-C><C-W>w
+
+vnoremap <BS> d
+
+" Control+S saves the current file (if it's been changed).
+"
+noremap  <C-S>  :update<CR>
+vnoremap <C-S>  <C-C>:update<CR>
+inoremap <C-S>  <C-O>:update<CR>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Plugin setup
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" pathogen (easly plugin installing)
+call pathogen#infect()
+call pathogen#helptags()
+
+" YankRing
+" bypass single-letter (and two-leter) deletes, start from 3-letter
+" words:
+"let g:yankring_min_element_length = 3
+" ignore duplicates
+"let g:yankring_ignore_duplicate = 0
+"
+"nnoremap <silent> <F12> :YRShow<CR>
+" use this if you use YankRing:
+"function! YRRunAfterMaps()
+	"nnoremap Y   :<C-U>YRYankCount 'y$'<CR>
+"endfunction
+
+" Tag List
+"nnoremap <silent> <F8> :TlistToggle<CR>
+"let g:Tlist_GainFocus_On_ToggleOpen = 1
+
+" PreciseJump
+" F - jump to character on current line
+"f - jump to character in whole window
+" t - jump to character -1 in whole window
+"let g:PreciseJump_I_am_brave = 1
+
+" Easy motion is has more features then PreciseJump (but both are very
+" good), let's use EasyMotion for a while
+"let g:EasyMotion_mapping_f = 'f'
+"let g:EasyMotion_mapping_F = 'F'
+"let g:EasyMotion_mapping_t = 't'
+"let g:EasyMotion_mapping_T = 'T'
+
+" MRU
+"let MRU_Add_Menu = 0                     " disable File->Recent Files
+"let MRU_File = $HOME."/_vim_mru_files"   " set location of recent file
+                                          " list
+"
+"map <F10> :MRU<CR>
+
+" ConqueTerm
+"let g:ConqueTerm_FastMode = 0
+"let g:ConqueTerm_ColorMode = 'conceal'
+

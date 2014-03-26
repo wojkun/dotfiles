@@ -1,0 +1,2 @@
+*/15 * * * * /usr/bin/updatedb
+0 22 * * * /usr/sbin/rtcwake -m no -s 28800

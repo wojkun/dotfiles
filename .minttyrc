@@ -1,0 +1,5 @@
+BoldAsFont=no
+FontHeight=10
+Term=xterm-256color
+CopyOnSelect=yes
+SwitchShortcuts=no

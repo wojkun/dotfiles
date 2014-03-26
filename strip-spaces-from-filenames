@@ -1,0 +1,26 @@
+#!/bin/sh
+
+# first 'find' all filenames and repalce spaces in them with my random giberish
+# (otherwise Bash will split filenames on spaces)
+# (random giberish is needed so there's no collision if filename contains
+# unusual chars)
+# (change -type d to rename directories)
+files=`/bin/find . -type f -iname "* *"|sed 's/ /FHKJSHDFJSDGFDHK/g'`
+#files=`/bin/find . -type f -iname "*.mht"|sed 's/ /FHKJSHDFJSDGFDHK/g'`
+
+# now that the filenames don't contain spaces we can loop through them
+for file in $files
+do
+    # bring back the spaces temporarily
+    filename=`echo $file|sed 's/FHKJSHDFJSDGFDHK/ /g'`
+    # finally, replace the spaces with whathever you want (sed)
+    # first perl: also replace _ , and other strange chars to -
+    # secon perl: keep only one - ,e.g. my---file.txt becomes my-file.txt)
+    newname=`echo $filename|sed 's/ /-/g'|perl -pe "s/(_|,|•|\|)/-/g"|perl -pe "s/-+/-/g"`
+
+    #echo ${newname}
+
+    mv -v "$filename" "$newname"
+
+done
+

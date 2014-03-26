@@ -1,0 +1,14 @@
+bin/
+
+git/
+
+gnome-encfs/
+
+vimfiles/
+
+_vim*
+
+# ignore all files ending with ~
+*~ 
+
+.metadata

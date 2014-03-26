@@ -1,0 +1,14 @@
+#!/bin/bash
+
+files=`/bin/find . -type f -iname "* *"|sed 's/ /UGHRSHDGTF/g'`
+
+for file in $files
+do
+    echo $file
+    filename=`echo $file|sed 's/UGHRSHDGTF/ /g'`
+    newname=`echo $filename|sed 's/ /-/g'`
+
+    mv -v "$filename" "$newname"
+
+done
+

@@ -1,0 +1,10 @@
+# send to clipboard / get from clipboard
+# http://williammitchell.blogspot.com/2008/03/fun-with-cygwins-devclipboard.html
+#
+# e.g. echo 'one two' | cb
+# e.g. ls | cb
+#
+# put the (uppercased) clipboard contents onto standard output
+# cb | tr a-z A-Z
+#
+test -t 0 && cat /dev/clipboard || cat >/dev/clipboard

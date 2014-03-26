@@ -1,0 +1,18 @@
+fu! B()
+	let i = input("input a letter..")
+	call append(".", ["~" . i . "::", "{", "	content = {RAlt}" . i,
+        \ "	goto, write", "}", "return"])
+endf
+
+:nmap <silent>  <leader>b  :call B()<CR>
+
+
+"this is working, I was playing with this
+"fu! C()
+    "let file = input("type name of file..")
+    "":echo(file)
+    ":e z:\first\vim\vimMarks
+"endf
+" <M-r> means left Alt plus r
+":nmap <silent>  <M-r>  :call C()<CR>
+

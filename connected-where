@@ -1,0 +1,1 @@
+netsh wlan show all | grep -B 4 -A 1 connected
