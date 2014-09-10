@@ -734,7 +734,7 @@ elseif has('unix')
     if hostname  ==? 'localhost.localdomain'
         :cd /home/user/visible/docs/computers
     elseif nodename ==? 'wid7.clear2Pay.com'
-        :cd /home/ofm/Dropbox/computers
+        :cd /home/ofm/dotfiles
     elseif nodename ==? 'bulls-ThinkPad-T500'
         :cd ~/Dropbox
     endif
