@@ -1,388 +1,3 @@
-ack | grep \'-c\'
-ack | grep \'-C\'
-ack | grep '-C'
-ack | grep context
-ack -C 2 single
-cd "$( cygpath -u 'G:\java\unsorted\java_docs' )"
-g SimpleTimeZone
-cd -
-g instanceof
-g externalizable
-g Externalizable
-g introspection
-g spection
-g tion
-g ction
-g ection
-g access
-g observable
-g Observable
-g Observer
-g observer
-g iterator
-g Iterator
-g blocking
-g BlockingQueue
-cd "$( cygpath -u 'G:\apps2\DropboxPortableAHK2\Dropbox\programming\java\Thinking_in_java_4_code' )"
-OutputGenerator.py
-python OutputGenerator.py
-cd concurrency/
-ant
-javac TestBlockingQueues.java 
-cd "$( cygpath -u 'G:\apps2\DropboxPortableAHK2\Dropbox\programming\java\Thinking_in_java_4_code\net' )"
-ant
-cd -
-cd "$( cygpath -u 'G:\apps2\DropboxPortableAHK2\Dropbox\programming\java\Thinking_in_java_4_code\concurrency' )"
-javac TestBlockingQueues.java 
-set
-cd "$( cygpath -u 'G:\apps2\DropboxPortableAHK2\Dropbox\programming\java\Thinking_in_java_4_code\concurrency' )"
-javac TestBlockingQueues.java 
-set
-cd "$( cygpath -u 'G:\apps2\DropboxPortableAHK2\Dropbox\programming\java\Thinking_in_java_4_code\concurrency' )"
-javac TestBlockingQueues.java 
-set
-cd "$( cygpath -u 'G:\apps2\DropboxPortableAHK2\Dropbox\programming\java\Thinking_in_java_4_code\concurrency' )"
-javac TestBlockingQueues.java 
-set
-cd "$( cygpath -u 'G:\apps2\DropboxPortableAHK2\Dropbox\programming\java\Thinking_in_java_4_code\concurrency' )"
-javac TestBlockingQueues.java 
-set
-cd "$( cygpath -u 'G:\apps2\DropboxPortableAHK2\Dropbox\programming\java\Thinking_in_java_4_code\concurrency' )"
-javac TestBlockingQueues.java 
-javac TestBlockingQueues.java LiftOff.java 
-java TestBlockingQueues
-java -cp . TestBlockingQueues
-set
-set
-set
-set
-cd "$( cygpath -u 'G:\apps2\DropboxPortableAHK2\Dropbox\programming\java\Thinking_in_java_4_code\concurrency' )"
-java TestBlockingQueues
-set
-cd "$( cygpath -u 'G:\apps2\DropboxPortableAHK2\Dropbox\programming\java\Thinking_in_java_4_code' )"
-g 'Exception'
-g -w 'Exception'
-g -w 'implement Exception'
-g -w 'implements Exception'
-g 'implements Exception'
-javanotes
-g clone
-g clone()
-g 'clone()'
-g cloneable
-g shadow
-g transient
-g forname
-g forName
-cd "$( cygpath -u 'G:\java\hibernate\hibernate-tutorials\annotations' )"
-cd "$( cygpath -u 'G:\java\hibernate\hibernate-tutorials' )"
-mvn package
-mvn package
-mvn package
-mvn test
-myslq
-'C:\Program Files\MySQL\MySQL Server 5.6\bin\mysql.exe'
-C:/'Program Files\MySQL\MySQL Server 5.6\bin\mysql.exe'
-C:/'Program Files\MySQL\MySQL Server 5.6\bin\mysql.exe' -ulala -
-C:/'Program Files\MySQL\MySQL Server 5.6\bin\mysql.exe' -ulala -p
-qwerty
-C:/'Program Files\MySQL\MySQL Server 5.6\bin\mysql.exe' -ulala -pqwerty
-cd 'C:\Program Files\MySQL\MySQL Server 5.6\bin\'
-ls
-myslq.exe
-mysql.exe
-la
-mysql.exe
-./mysql.exe
-./mysql.exe -ulala -p
-qwerty
-./mysql.exe -ulala
-./mysql.exe -uroot
-./mysql.exe -uroot -pqwerty
-javanotes
-g integral
-g Integral
-g -i integral
-man ack
-ack
-g Integral
-ack --create-ackrc
-ls
-ack -man
-man ack
-ack -man
-vimnotes
-g prev
-g next
-g next
-g quickfix
-g quickfix
-g manual
-cd "$( cygpath -u 'G:\apps2\DropboxPortableAHK2\Dropbox\software-documentation\vim' )"
-g quickfix
-ack -man
-g --smart-case quickfix
-javanotes
-g integral
-g Integral
-g integral
-g --smart-case integral
-ack -man
-javanotes
-g integral
-g Integral
-g Integral
-g scanner
-cd "$( cygpath -u 'G:\java\hibernate\myapp3' )"
-mvn clean compile
-mvn clean compile
-mvn clean compile
-mvn clean compile
-mvn clean compile
-mvn clean compile
-mvn clean compile
-mvn clean compile
-mvn clean compile
-mvn clean compile
-mvn clean compile
-mvn clean compile
-mvn clean compile
-mvn clean compile
-mvn clean compile
-mvn clean compile
-mvn clean compile
-mvn clean compile
-mvn clean compile
-
-mvn clean compile
-mvn test
-mvn test
-mvn clean test
-mvn clean test
-mvn clean compile
-mvn clean compile
-mvn clean compile
-mvn clean compile
-cd "$( cygpath -u 'G:\java\spring\moje\myproj3' )"
-mvn clean compile
-mvn clean compilecd "$( cygpath -u 'G:\java\hibernate\myapp3' )"
-cd "$( cygpath -u 'G:\java\hibernate\myapp3' )"
-mvn clean compile
-mvn clean compile
-mvn clean compile
-mvn clean compile
-mvn clean compile
-mvn clean compile
-mvn test
-mvn test
-mvn clean compile
-mvn test
-mvn test
-mvn test
-mvn test
-mvn test
-mvn clean test
-mvn clean test
-mvn clean compile
-javanotes
-g print
-g printf
-g concurrent
-g fail
-g fast
-g producer
-g consumer
-diff 'G:\apps2\FirefoxPortable\Data\profile\user.js' 'Z:\settings\firefox\user.js'
-diff
-diff 'G:/apps2/FirefoxPortable/Data/profile/user.js' 'Z:/settings/firefox/user.js'
-diff 'G:/apps2/FirefoxPortable/Data/profile/user.js' incr.ahk 
-ping www.google.com
-watch
-cd "$( cygpath -u '' )"
-cd "$( cygpath -u 'G:\apps2\DropboxPortableAHK2\Dropbox\programming\java\jsp jstl jsf el' )"
-cd moje
-mvn archetype:create -DgroupId=moje -DartifactId=myjsf1 -DarchetypeArtifactId=maven-archetype-webapp
-cd myjsf1/
-mvn tomcat7:run
-mvn tomcat7:run
-mvn tomcat7:run
-mvn tomcat7:run
-mvn tomcat7:run
-mvn tomcat7:run
-mvn tomcat7:run
-cd "$( cygpath -u 'G:\downloads\JSF2.0-hello-world-example-2.1.7\JavaServerFaces' )"
-cd "$( cygpath -u 'G:\downloads\JSF2.0-hello-world-example-2.1.7\JavaServerFaces' )"
-ls
-cd "$( cygpath -u 'G:\downloads\JSF2.0-hello-world-example-2.1.7\JavaServerFaces' )"
-mvn tomcat7:run
-mvn tomcat7:run
-mvn tomcat:run
-cd "$( cygpath -u 'G:\apps2\DropboxPortableAHK2\Dropbox\programming\java\jsp jstl jsf el\moje' )"
-mvn archetype:generate -DarchetypeArtifactId=maven-archetype-webapp -DgroupId=org.ccm.maven -DartifactId=firstwebapp -DinteractiveMode=false
-mvn clean install
-cd firstwebapp/
-mvn clean install
-mvn jetty:run
-cd "$( cygpath -u 'G:\apps2\DropboxPortableAHK2\Dropbox\programming\java\jsp jstl jsf el\moje' )"
-cd "$( cygpath -u 'G:\apps2\DropboxPortableAHK2\Dropbox\programming\java\jsp jstl jsf el\moje' )"
-mvn archetype:create -DgroupId=com.my-company.my-project -DartifactId=my-project-web -DpackageName=com.company.project.web -DarchetypeGroupId=com.rfc.maven.archetypes -DarchetypeArtifactId=jsf-maven-archetype -DremoteRepositories=http://maven.rodandjen.us/repo
-cd "$( cygpath -u 'G:\apps2\DropboxPortableAHK2\Dropbox\programming\java\jsp jstl jsf el\moje' )"
-mvn archetype:create -DgroupId=com.tutorialspoint.test -DartifactId=helloworld -DarchetypeArtifactId=maven-archetype-webapp
-cd "$( cygpath -u 'G:\apps2\DropboxPortableAHK2\Dropbox\programming\java\jsp jstl jsf el\moje\helloworld' )"
-mvn tomcat7:run
-mvn tomcat7:run
-mvn tomcat:run
-mvn clean package
-mvn clean package
-mvn clean package
-mvn tomcat7:run
-mvn clean tomcat7:run
-mvn clean tomcat7:run
-mvn clean tomcat7:run
-mvn clean tomcat7:run
-cd "$( cygpath -u 'Z:\proj\java' )"
-javac
-javac testowa.java
-javac testowa.java
-javac HelloWorld.java 
-java HelloWorld
-javac HelloWorld.java 
-java HelloWorld
-javac HelloWorld.java 
-java HelloWorld
-javac HelloWorld.java 
-java HelloWorld
-javac HelloWorld.java 
-java HelloWorld
-javac HelloWorld.java 
-javac HelloWorld.java 
-java HelloWorld
-javac HelloWorld.java 
-javac HelloWorld.java 
-java HelloWorld
-javac HelloWorld.java 
-java HelloWorld
-javac HelloWorld.java 
-java HelloWorld
-mvn clean tomcat7:run
-cd -
-mvn clean tomcat7:run
-mvn clean tomcat7:run
-mvn clean tomcat7:run
-mvn clean tomcat7:run
-mvn clean tomcat7:run
-mvn clean tomcat7:run
-mvn clean tomcat7:run
-mvn clean tomcat7:run
-mvn clean tomcat7:run
-mvn clean tomcat7:run
-mvn clean tomcat7:run
-mvn clean tomcat7:run
-mvn clean
-mvn tomcat7:run
-cd ..
-cd ..
-cd ..
-cd "$( cygpath -u 'G:\apps2\DropboxPortableAHK2\Dropbox\programming\java\jsp_jstl_jsf_el\moje\helloworld' )"
-mvn tomcat7:run
-cd "$( cygpath -u 'G:\apps2\DropboxPortableAHK2\Dropbox\programming\java\spring\moje\myproj3' )"
-mvn tomcat7:run
-cd "$( cygpath -u 'G:\apps2\DropboxPortableAHK2\Dropbox\programming\java\spring\moje\myproj2' )"
-mvn tomcat7:run
-cd "$( cygpath -u 'G:\apps2\DropboxPortableAHK2\Dropbox\programming\java\spring\moje\myproj3' )"
-mvn tomcat7:run
-cd "$( cygpath -u 'G:\apps2\DropboxPortableAHK2\Dropbox\programming\java\spring\moje\myshop' )"
-mvn tomcat7:run
-cd "$( cygpath -u 'G:\apps2\DropboxPortableAHK2\Dropbox\programming\java\spring\moje\myproj2' )"
-mvn clean tomcat7:run
-cd "$( cygpath -u 'G:\apps2\DropboxPortableAHK2\Dropbox\programming\java\spring\moje\myproj3' )"
-mvn clean tomcat7:run
-mvn clean tomcat7:run
-mvn clean tomcat7:run
-mvn clean tomcat7:run
-mvn clean tomcat7:run
-mvn clean tomcat7:run
-mvn clean tomcat7:run
-mvn clean tomcat7:run
-cd "$( cygpath -u 'G:\apps2\DropboxPortableAHK2\Dropbox\programming\java\spring\moje\myproj1' )"
-mvn clean tomcat7:run
-cd "$( cygpath -u 'G:\apps2\DropboxPortableAHK2\Dropbox\programming\java\jsp_jstl_jsf_el\moje\helloworld' )"
-mvn clean tomcat7:run
-mvn clean tomcat7:run
-netstat
-type netstat
-netstat -aon
-mvn clean compile
-g home
-mvn clean compile
-cd "$( cygpath -u 'G:\downloads\JSF-2-TextBox-Example\JavaServerFaces' )"
-mvn clean compile
-cd "$( cygpath -u 'G:\downloads\JSF-2-TextBox-Example\JavaServerFaces' )"
-mvn clean compile
-mvn clean package
-cd "$( cygpath -u 'G:\downloads\JSF-2-Listbox-Example\JavaServerFaces' )"
-mvn clean package
-cd ..
-cd ..
-cd "$( cygpath -u 'G:\apps2\DropboxPortableAHK2\Dropbox\programming\java\jsp_jstl_jsf_el\moje\helloworld' )"
-mvn clean compile
-mvn clean compile
-mvn clean compile
-ping www.google.com
-cd ..
-cd ..
-g nip
-g -w nip
-g rodzice
-g olszty
-g 19
-g '45-'
-cd ..
-cd ..
-g polbank
-svn
-t
-wget http://www.swingexplorer.com/download?file=swexpl-eclipse.zip&version=1_6
-t
-wget http://www.swingexplorer.com/download?file=swexpl-eclipse.zip&version=1_6
-cd "$( cygpath -u 'G:\apps2\DropboxPortableAHK2\Dropbox\programming\java\eclipse_ee_workspace\simple' )"
-mvn clean compile
-mvn clean compile
-mvn clean compile
-mvn clean compile
-cd "$( cygpath -u 'G:\apps2\DropboxPortableAHK2\Dropbox\programming\java\eclipse_ee_workspace\swing_hibernate1' )"
-mvn clean compile
-t
-wget http://www.hirensbootcd.org/files/Hirens.BootCD.15.2.zip
-cd /cygdrive/h
-ls
-WinTclTk/bin/wish.exe scut.tcl 
-WinTclTk/bin/wish.exe ./scut.tcl 
-WinTclTk/bin/wish.exe ./computers/scut.tcl 
-WinTclTk/bin/wish.exe ./computers/scut.tcl 
-WinTclTk/bin/wish.exe ./computers/scut.tcl 
-cd "$( cygpath -u 'G:\apps2\DropboxPortableAHK2\Dropbox\programming\java\maven\mvnexbook-examples-1.0\ch-multi-spring\simple-parent' )"
-mvn compile
-cd "$( cygpath -u 'G:\apps2\DropboxPortableAHK2\Dropbox\programming\java\maven\mvnexbook-examples-1.0\ch-multi-spring' )"
-mvn hibernate3:hbm2ddl
-cd "$( cygpath -u 'G:\apps2\DropboxPortableAHK2\Dropbox\programming\java\maven\mvnexbook-examples-1.0\ch-multi-spring\simple-parent' )"
-mvn hibernate3:hbm2ddl
-cd "$( cygpath -u 'G:\apps2\DropboxPortableAHK2\Dropbox\programming\java\maven\mvnexbook-examples-1.0\ch-multi-spring\simple-parent\simple-webapp' )"
-mvn hibernate3:hbm2ddl
-cd ..
-cd ..
-cd "$( cygpath -u 'G:\apps2\DropboxPortableAHK2\Dropbox\programming\java\maven\mvnexbook-examples-1.0\ch-multi-spring' )"
-mvn clean package
-cd "$( cygpath -u 'G:\apps2\DropboxPortableAHK2\Dropbox\programming\java\maven\mvnexbook-examples-1.0\ch-multi-spring\simple-parent\simple-webapp' )"
-mvn hibernate3:hbm2ddl
-cd "$( cygpath -u 'G:\apps2\DropboxPortableAHK2\Dropbox\programming\java\maven\mvnexbook-examples-1.0\ch-multi-spring\simple-parent\simple-command' )"
-mvn assembly:assembly
-vimnotes 
-g exit
-g jk
-g kj
-notesbash 
-cd ..
 cd autohotkey/
 g swap
 g ctrl
@@ -498,3 +113,388 @@ j
 c
 t
 javanotes 
+comp
+javanotes 
+g @SessionScoped
+g '@SessionScoped'
+g "@SessionScoped"
+g SessionScoped
+type g
+ack --smart-case session
+ack --smart-case sessionbean
+H
+h
+pwd
+cd vimfiles/
+git init
+ls autoload/
+ls colors/
+ls ftplugin/
+ls syntax/
+git add ftplugin/ syntax/
+git commit
+git status
+git log
+javanotes 
+g named
+g @named
+svn
+where svn
+t
+mkdir struts_proj1
+cd struts_proj1
+svn co https://svn.apache.org/repos/asf/struts/sandbox/trunk/
+ls
+cd trunk
+ls
+gg pom.xml 
+gg
+type v
+v pom.xml 
+ls
+dir
+ahkd
+ahk
+aa
+a
+computer
+computers
+comp
+proj
+cd ahk/
+git status
+git status
+git add tf.ahk 
+git status
+git commit
+git status
+git commit -a
+git status
+c
+comp
+g xwork
+d
+wget http://www.dzone.com/sites/all/files/Struts2Example19.zip
+curl
+g:\apps\unixutils\wget http://www.dzone.com/sites/all/files/Struts2Example19.zip
+g:/apps/unixutils/wget http://www.dzone.com/sites/all/files/Struts2Example19.zip
+t
+/cygdrive/g/apps/youtube-dl.exe http://www.youtube.com/watch?v=qTAKzSeHtdE
+docs
+doc
+d
+comp
+cd vim
+ls
+for i in $(find . -type f -name "*[A-Z]*"); do echo "$i" "$(echo $i | tr A-Z a-z)"; done
+for i in $(find . -type f -name "*[A-Z]*"); ;
+for i in $(find . -type f -name "*[A-Z]*");
+for i in $(find . -type f -name "*[A-Z]*")
+for i in $(find . -type f -name "*[A-Z]*");
+for i in $(find . -type f -name "*[A-Z]*"); do echo ok; done
+for i in $(find . -type f); do echo ok; done
+for i in $(findd . -type f -name "*[A-Z]*"); do echo "$i" "$(echo $i | tr A-Z a-z)"; done
+ls
+for i in $(findd . -type f -name "*[A-Z]*"); do mv "$i" "$(echo $i | tr A-Z a-z)"; done
+ls
+type mv
+cat BlocksOfText 
+for i in $(findd . -type f -name "*[A-Z]*"); do mv "$i" "$(echo $i | tr A-Z a-z)"; done
+ls
+for i in $(findd . -type f -name "*[A-Z]*"); do echo "$i" "$(echo $i | tr A-Z a-z)"; done
+mv .\BlocksOfText .\blocksoftext
+for i in $(findd `pwd` -type f -name "*[A-Z]*"); do echo "$i" "$(echo $i | tr A-Z a-z)"; done
+ls /cygdrive/z/computers/vi
+ls /cygdrive/z/computers/vim
+findd ls /cygdrive/z/computers/vim
+findd /cygdrive/z/computers/vim
+type findd
+type find
+/cygdrive/g/apps/UnixUtils/find.exe /cygdrive/z/computers/vim
+/cygdrive/g/apps/UnixTools/ /cygdrive/z/computers/vim
+/cygdrive/g/cygwin/bin/find /cygdrive/z/computers/vim
+for i in $(/cygdrive/g/cygwin/bin/find `pwd` -type f -name "*[A-Z]*"); do echo "$i" "$(echo $i | tr A-Z a-z)"; done
+for i in $(/cygdrive/g/cygwin/bin/find `pwd` -type f -name "*[A-Z]*"); do echo "$i" "$(echo $i | tr A-Z a-z)"; done
+for i in $(/cygdrive/g/cygwin/bin/find `pwd` -type f -name "*[A-Z]*"); do echo "$i" "$(echo $i | tr A-Z a-z)"; done
+/cygdrive/g/cygwin/bin/find `pwd`
+for i in $(/cygdrive/g/cygwin/bin/find `pwd` -type f -name "*[A-Z]*"); do echo ok; done
+for i in $(/cygdrive/g/cygwin/bin/find `pwd` -type f -name "*[A-Z]*"); do echo $i; done
+(/cygdrive/g/cygwin/bin/find `pwd` -type f -name "*[A-Z]*"
+(/cygdrive/g/cygwin/bin/find `pwd` -type f -name "*[A-Z]*
+/cygdrive/g/cygwin/bin/find `pwd` -type f -name "*[A-Z]*"
+/cygdrive/g/cygwin/bin/find `pwd` -type f
+for i in $(/cygdrive/g/cygwin/bin/find `pwd` -type f); do echo "$i" "$(echo $i | tr A-Z a-z)"; done
+comp
+cd vim
+ls
+for i in $(/cygdrive/g/cygwin/bin/find `pwd` -type f); do echo "$i" "$(echo $i | tr A-Z a-z)"; done
+for i in $(/cygdrive/g/cygwin/bin/find `pwd` -type f); do mv "$i" "$(echo $i | tr A-Z a-z)"; done
+ls
+type find
+type mv
+for i in $(/usr/bin/find `pwd` -type f); do echo "$i"; done
+/bin/find
+ll /bin
+ll /
+ls
+cd ..
+fin
+find
+/bin/find
+for i in $(/cygdrive/g/cygwin/bin/find `pwd` -type f); do echo "$i" "$(echo $i | tr A-Z a-z)"; done
+for i in $(/cygdrive/g/cygwin/bin/find `pwd`); do echo "$i" "$(echo $i | tr A-Z a-z)"; done
+for i in $(/bin/find `pwd`); do /bin/mv "$i" "$(echo $i | /bin/tr A-Z a-z)"; done
+/bin/find -iname 'checker'
+/bin/find -iname '*.mht'
+/bin/find -iname 'interesting-conver*'
+/bin/find -iname '*dom*'
+/bin/find
+cd nextira/
+ls
+vim my.bat 
+uname
+man uname
+cd ..
+cd vim
+ls
+vim
+vim
+vim
+gvim
+vim
+gvim
+cd ..
+cd nextira/
+ls
+ll
+vim my.bat 
+vim nextira 
+t
+wget http://centos.hitme.net.pl/5.10/isos/x86_64/
+wget
+type wget
+wget -v
+wget --version
+type vim
+vim --version
+wget
+man wget
+ftp
+type ftp
+t
+wget g:\apps\UnixUtils\wget.exe -c http://centos.hitme.net.pl/5.10/isos/x86_64/CentOS-5.10-x86_64-bin-5of9.iso http://centos.hitme.net.pl/5.10/isos/x86_64/CentOS-5.10-x86_64-bin-6of9.iso 
+vim
+head 
+printf "123456"
+printf "123456" | head -1
+printf "123456" | head -c -1
+printf "123456" | head -c -10
+printf "123456" | head -c 4
+man head
+head --help
+head -v
+head --version
+git
+git
+/bin/git
+t
+cd /cygdrive/z/home/vimfiles/bundle/
+/bin/git clone https://github.com/mileszs/ack.vim.git
+ls
+/bin/ls 
+/bin/ls -a
+mkdir ackvim
+/bin/mkdir ackvim
+/bin/mv ack.vim/ ackvim/
+/bin/ls
+vim
+ls
+/bin/mv ackvim/ack.vim/ .
+/bin/ls -a
+/bin/rm -r ackvim/
+pwd
+/bin/git clone https://github.com/rking/ag.vim ag && vim +Helptags
+ls
+ ls
+type find
+/bin/find
+type find
+gvim
+vim
+gvim ~/.bashrc 
+p
+find
+type find
+set
+set | grep PATH
+find
+/bin/find
+find
+type find
+find
+type sed
+uname
+ack
+uname
+uname -n
+if [ $(uname) == "CYGWIN_NT-6.1-WOW64" ] then echo ok;
+if [ $(uname) == "CYGWIN_NT-6.1-WOW64" ] then echo ok
+if [ $(uname) == "CYGWIN_NT-6.1-WOW64" ] then echo ok fi
+if [ $(uname) == "CYGWIN_NT-6.1-WOW64" ]; then echo ok fi
+if [ $(uname) == "CYGWIN_NT-6.1-WOW64" ]; then echo ok; fi
+if [ $(uname) == "CYGWIN_NT-6.1-WOW64s" ]; then echo ok; fi
+if [ $(uname) == "CYGWIN_NT-6.1-WOW64" ]; then echo ok; fi
+d
+d
+.
+man .
+type .
+man bash
+man bash
+type source
+stty
+stty -ixon
+d
+echo $BASH_VERSION 
+pwd
+find
+ack
+pwd
+pwd
+cd z:/simplenote
+ls
+cd java
+ls
+for i in *; do mv $i java-$i; done
+ls
+for i in *; do mv $i $i.txt; done
+ls
+cd ..
+ls
+cd computers/
+ls
+cd ../unsorted
+cd ..
+cd unsorted
+pwd
+ls
+cd ..
+cd unsorted/computers/
+ls
+cd apps/
+for i in *; do mv $i apps-$i.txt; done
+cd ../autohotkey/
+for i in *; do mv $i ahk-$i.txt; done
+cd ../bash
+for i in *; do mv $i bash-$i.txt; done
+cd ../design_patterns/
+for i in *; do mv $i design-patterns-$i.txt; done
+cd ../dom
+for i in *; do mv $i dom-$i.txt; done
+cd ../html
+for i in *; do mv $i html-$i.txt; done
+cd ../java
+for i in *; do mv $i java-$i.txt; done
+cd ../javascript/
+for i in *; do mv $i javascript-$i.txt; done
+cd ../jquery/
+for i in *; do mv $i jquery-$i.txt; done
+cd ../linux/
+for i in *; do mv $i linux-$i.txt; done
+cd ../networking/
+for i in *; do mv $i networking-$i.txt; done
+cd ../php
+for i in *; do mv $i php-$i.txt; done
+cd ../python/
+for i in *; do mv $i python-$i.txt; done
+cd ../ruby
+for i in *; do mv $i ruby-$i.txt; done
+cd ../security/
+for i in *; do mv $i security-$i.txt; done
+cd ../tcl
+for i in *; do mv $i tcl-$i.txt; done
+cd ../tk
+for i in *; do mv $i tk-$i.txt; done
+cd ../vim
+for i in *; do mv $i vim-$i.txt; done
+cd ../windows/
+for i in *; do mv $i windows-$i.txt; done
+dif
+diff
+cd z:/
+ls
+diff software-i-use simplenote/software-i-use.txt 
+cd z:/first
+cd z:/unsorted
+ls
+cd websites/
+for i in *; do mv $i websites-$i.txt; done
+ls
+d
+g:/apps/youtube-dl.exe
+g:/apps/youtube-dl.exe http://www.youtube.com/watch?v=LYP6WKjQs9c
+pwd
+pwd
+cd g:/apps2
+pwd
+ls
+rm DropboxPortableAHK2
+rm -r DropboxPortableAHK2
+type rm
+rm! -r DropboxPortableAHK2
+rm! -r DropboxPortableAHK2
+rm! -r DropboxPortableAHK2
+rm! -r DropboxPortableAHK2
+cd g:/apps2/a
+rm -r b/
+rm -r b/
+rm -r b/
+rm -r b/
+rm -r b/
+ls
+ls g:/
+cd g:/
+cd .trashcan/
+ls
+rm! -r a
+rm! -r b
+rm! -r b
+rm! --help
+mv 'b/c/Bash/a/Bash One-Liners Explained, Part I: Working with files - good coders code, great reuse.mht' haha
+ls 'b/c/Bash/a/Bash One-Liners Explained, Part I: Working with files - good coders code, great reuse.mht'
+ls 'b/c/Bash/a/'
+mv  b/c/Bash/a/Bash\ One-Liners\ Explained\,\ Part\ * haha
+mv  b/c/Bash/a/Bash\ One-Liners\ Explained\,\ Part\ IV\:\ Working\ with\ history\ -\ good\ coders\ code\,\ great\ reuse.mht  haha
+mv  b/c/Bash/a/Bash\ One-Liners\ Explained\,\ Part\ IV\:\ Working\ with\ history\ -\ good\ coders\ code\,\ great\ reuse.mht  haha
+mv --help
+ll  b/c/Bash/a/Bash\ One-Liners\ Explained\,\ Part\ IV\:\ Working\ with\ history\ -\ good\ coders\ code\,\ great\ reuse.mht  haha
+ls  b/c/Bash/a/Bash\ One-Liners\ Explained\,\ Part\ IV\:\ Working\ with\ history\ -\ good\ coders\ code\,\ great\ reuse.mht  haha
+cd G:\apps2
+cd G:/apps2
+cd g:/apps2
+find -iname \*bulls\*
+vi ./DropboxPortableAHKdocs/Dropbox/bulls
+vi ./DropboxPortableAHKdocs/Dropbox/docs/bulls/temp.txt 
+cd z:
+grep -ir middle *
+grep -ir middlew *
+cd g:/apps2/
+grep -ir middlew *
+cd z:
+grep -ir middlew *
+vi bulls/temp.txt
+vi bulls/bulls.txt 
+vi bulls/bulls2.txt 
+ls
+cd g:/java
+ls
+cd eclipse-jee/
+ls
+find -iname mylyn
+find -iname mylyn*
+find plugins/ features/ -iname *mylyn*
+find plugins/ features/ -iname *mylyn* | xargs
+rm
+find plugins/ features/ -iname *mylyn* | xargs rm -r
+find plugins/ features/ -iname *mylyn* | xargs rm
+find plugins/ features/ -iname *mylyn* | xargs 

@@ -14,12 +14,13 @@
 $
 
 # Command Line History (newest to oldest):
+:bd
+:pwd
 :se ft=sh
 :vert help edit-binary
 :qall!
 :!quit
 :quit!
-:bd
 :quit
 :!q
 :q!
@@ -247,18 +248,20 @@ $
 	#do something
 
 # File marks:
-'0  56  4  /cygdrive/g/temp/tmp
-'1  1  0  /cygdrive/g/temp/tmp
-'2  1  0  /cygdrive/g/downloads/Spring3HibernateMaven/pom.xml
-'3  1  0  /cygdrive/g/downloads/eclipse_ee_workspace/.metadata/.log
-'4  1  0  /cygdrive/g/temp/new/super-mata-edukacyjna-jedyna-taka-na-rynku-gratis/opis
-'5  1  11  /cygdrive/g/temp/dupahuja
-'6  1  0  /cygdrive/g/temp/c-ViewAdLargeImage@AdId=453762129
-'7  1  0  /cygdrive/g/temp/bindeez-zestaw-podstawowy-432525185
-'8  7  20  /cygdrive/g/temp/m
-'9  57  0  /usr/share/doc/renameutils/README
+'0  1  0  /cygdrive/z/computers/nextira/my.bat
+'1  56  4  /cygdrive/g/temp/tmp
+'2  1  0  /cygdrive/g/temp/tmp
+'3  1  0  /cygdrive/g/downloads/Spring3HibernateMaven/pom.xml
+'4  1  0  /cygdrive/g/downloads/eclipse_ee_workspace/.metadata/.log
+'5  1  0  /cygdrive/g/temp/new/super-mata-edukacyjna-jedyna-taka-na-rynku-gratis/opis
+'6  1  11  /cygdrive/g/temp/dupahuja
+'7  1  0  /cygdrive/g/temp/c-ViewAdLargeImage@AdId=453762129
+'8  1  0  /cygdrive/g/temp/bindeez-zestaw-podstawowy-432525185
+'9  7  20  /cygdrive/g/temp/m
 
 # Jumplist (newest first):
+-'  1  0  /cygdrive/z/computers/nextira/nextira
+-'  1  0  /cygdrive/z/computers/nextira/my.bat
 -'  56  4  /cygdrive/g/temp/tmp
 -'  195  0  /cygdrive/g/temp/tmp
 -'  1  0  /cygdrive/g/temp/tmp
@@ -354,10 +357,14 @@ $
 -'  1  11  /cygdrive/g/temp/dupahuja
 -'  1  0  /cygdrive/g/temp/c-ViewAdLargeImage@AdId=453762129
 -'  1  0  /cygdrive/g/temp/bindeez-zestaw-podstawowy-432525185
--'  7  20  /cygdrive/g/temp/m
--'  1  0  /cygdrive/g/temp/m
 
 # History of marks within files (newest to oldest):
+
+> /cygdrive/z/computers/nextira/nextira
+	"	1	0
+
+> /cygdrive/z/computers/nextira/my.bat
+	"	1	0
 
 > /cygdrive/g/temp/tmp
 	"	56	4

@@ -1,9 +1,5 @@
 .less-history-file:
 .search
-"delete
-"qqqqqq
-"direct
-"test
 "##
 "context
 "-s
@@ -100,4 +96,8 @@
 "testcontext.
 "TestCon
 "Running
+"fpt
+"ftp
+"passw
+"contin
 .shell
