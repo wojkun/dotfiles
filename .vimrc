@@ -16,9 +16,19 @@ if has('win32')
 
     "source $VIMRUNTIME/mswin.vim
 
+elseif has('win32unix')
+    " this is for Cygwin
+    set runtimepath=$HOME/.vim,$HOME/vimfiles,$VIM/vimfiles,$VIMRUNTIME,
+        \$VIM/vimfiles/after,$HOME/vimfiles/after
 elseif has('mac')
 elseif has('unix')
 endif
+
+" computer's network name
+let nodename = system("uname -n | head -c -1")
+" computer's name
+let hostname = substitute(system('hostname'), '\n', '', '')
+":echo hostname
 
 " always use English for Vim UI
 let $LANG = 'en'
@@ -87,8 +97,17 @@ inoremap <C-S>  <C-O>:update<CR>
 " Plugin setup
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " pathogen (easly plugin installing)
+let g:pathogen_disabled = []
+if !has('gui_running')
+    call add(g:pathogen_disabled, 'csapprox')
+endif
+if v:version < '702'
+    call add(g:pathogen_disabled, 'netrw')
+    call add(g:pathogen_disabled, 'vim-snipmate') " problems after pressing Tab
+endif
 call pathogen#infect()
 call pathogen#helptags()
+
 
 " YankRing
 " bypass single-letter (and two-leter) deletes, start from 3-letter
@@ -140,7 +159,9 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set softtabstop=4
-set guifont=Consolas:h11:cANSI
+if has('win32')
+    set guifont=Consolas:h11:cANSI
+endif
 "set foldmethod=indent
 set foldignore=
 " consider dash to be part of a word
@@ -235,14 +256,38 @@ set autoindent
 :set guioptions-=T  "remove toolbar
 ":set guioptions-=r  "remove right-hand scroll bar
 
+" allow recursive search with :find
+" e.g. :find Myfi<Tab> will find Myfile.java deep under current dir
+:set path+=**
+
+
 " start gVim maximized
-let hostname = substitute(system('hostname'), '\n', '', '')
-if hostname == "ADI-PC"
-    " presses Alt+Space, then 'x', it won't work on Polish version of
-    " Windows, coz the letter to maximize is 's'
-    au GUIEnter * simalt ~x  " start gVim maximized
-elseif hostname == "PLWAZ250N1"
-    au GUIEnter * simalt ~s " maximize also for Polish version of Windows
+if has("gui_running")
+    if hostname == "ADI-PC"
+        " presses Alt+Space, then 'x', it won't work on Polish version of
+        " Windows, coz the letter to maximize is 's'
+        au GUIEnter * simalt ~x  " start gVim maximized
+    elseif hostname == "PLWAZ250N1"
+        " Nextira comp?
+        au GUIEnter * simalt ~s " maximize also for Polish version of Windows
+    elseif hostname == "bulls-ThinkPad-T500"
+        autocmd GUIEnter * silent !wmctrl -r :ACTIVE: -b add,maximized_vert,maximized_horz
+        ":echo 'lalababba'
+        nmap <a-q> :e ~/Dropbox/unsorted/temp.txt<cr>
+        nmap <a-1> :e ~/private/bulls/bulls.txt<cr>
+        nmap <a-F5> :e ~/Dropbox/bulls/CSIDEV-2048<cr>
+        nmap <a-F6> :e /tmp/trunk.log<cr>
+        nmap <a-F9> :e ~/Dropbox/home/.bashrc<cr>
+        nmap <a-F11> :e ~/Dropbox/unsorted/skrawki.txt<cr>
+        nmap <a-F12> :e ~/Dropbox/unsorted/pua.txt<cr>
+        nmap <a-d> :bd<cr>
+        nmap <a-a> :fin 
+        ":set path=**
+        :set path=~/Dropbox/computers/**
+    elseif has('unix')
+        "au GUIEnter * simalt ~x  " start gVim maximized
+        autocmd GUIEnter * silent !wmctrl -r :ACTIVE: -b add,maximized_vert,maximized_horz
+    endif
 endif
 " TODO zamiast hardkodowac nazwę kompa, zdobądź info o wersji
 " językowej Windowsa
@@ -466,8 +511,8 @@ map <F3> :bp<cr>
 ":inoremap <a-f> <Esc>:e #
 
 " delete current buffer"{{{
-:noremap <F8> :bd<CR>
-:inoremap <F8> <Esc>:bd<CR>
+:noremap <F12> :bd<CR>
+:inoremap <F12> <Esc>:bd<CR>
 "}}}
 
 "Delete all buffers (via Derek Wyatt)"{{{
@@ -682,6 +727,18 @@ cnoremap kj <Esc>
 " current dir settings"{{{
 ":cd $TEMP
 ":cd $DOCS//first//computers
+if has("win32unix")
+    " Do something only in Cygwin
+    :cd /cygdrive/z/computers
+elseif has('unix')
+    if hostname  ==? 'localhost.localdomain'
+        :cd /home/user/visible/docs/computers
+    elseif nodename ==? 'wid7.clear2Pay.com'
+        :cd /home/ofm/Dropbox/computers
+    elseif nodename ==? 'bulls-ThinkPad-T500'
+        :cd ~/Dropbox
+    endif
+endif
 
 " change to directory of current file automatically
 "autocmd BufEnter * lcd %:p:h " one way
@@ -749,7 +806,9 @@ highlight ExtraWhitespace ctermbg=yellow guibg=yellow
 au FileType vim,python,tcl,perl,sh,c,cpp,java,php au BufWinEnter <buffer> match ExtraWhitespace /\s\+$/
 au FileType vim,python,tcl,perl,sh,c,cpp,java,php au InsertEnter <buffer> match ExtraWhitespace /\s\+\%#\@<!$/
 au FileType vim,python,tcl,perl,sh,c,cpp,java,php au InsertLeave <buffer> match ExtraWhitespace /\s\+$/
-au FileType vim,python,tcl,perl,sh,c,cpp,java,php au BufWinLeave <buffer> call clearmatches()
+if version >= 702
+    au FileType vim,python,tcl,perl,sh,c,cpp,java,php au BufWinLeave <buffer> call clearmatches()
+endif
 " }}}
 " delete multi blank lines {{{
 "nmap <F8> <Esc>V`[>gv:!cat -s<CR>`]
@@ -782,16 +841,18 @@ function s:DeleteBufferIfEmpty()
 endfunction
 "}}}
 
-function Test() range
-  echo system('echo '.shellescape(join(getline(a:firstline, a:lastline), "\n")).'| pbcopy')
-endfunction
+" SOME UNSORTED STUFF ??
+"function Test() range
+  "echo system('echo '.shellescape(join(getline(a:firstline, a:lastline), "\n")).'| pbcopy')
+"endfunction
 
-function Mine()
-   norm "ayip
-   :redir! > g:/downloads/lala
-   :echo @a
-   :redir END
-endfunction
+"function Mine()
+   "norm "ayip
+   ":redir! > g:/downloads/lala
+   ":echo @a
+   ":redir END
+"endfunction
+
 
 "If you want to change just one or two colors in your syntax highlighting,
 "there is a simpler way other than editing color files (or creating new ones).
@@ -949,7 +1010,9 @@ inoremap <c-Enter> <Enter><C-W>
 "Or may be triple click to avoid conflicting with text selecting command of vim
 ":map <3-LeftMouse> za
 
-" allow recursive search with :find
-" e.g. :find Myfi<Tab> will find Myfile.java deep under current dir
-:set path+=**
+autocmd BufNewFile,BufReadPost *.log :set filetype=log
+au FileType log setlocal nowrap
+" upon entering trunk.log delete all lines staring with a Tab in trunk.log
+au BufEnter trunk.log :g/\t/d
 
+:let VCSCommandVCSTypePreference = "svn"

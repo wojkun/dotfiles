@@ -9,8 +9,10 @@
     # and move to just after the open quote
     bind '"\C-x\"":"\"\"\C-b"'
 
-    # A-r searches backward for lines BEGINNING with your searched string (normal
-    # C-r searches anywhere in the line for your searched string) (VERY USEFUL)
+    # C-r searches anywhere in the line for your searched string) (reverse-i-search) (VERY USEFUL)
+    # no need to set it up (it's default in Bash?)
+
+    # A-r searches backward for lines BEGINNING with string you typed 
     bind '"\er":history-search-backward'
 
     #bind '"\C-f": "this is my tekst"'
@@ -45,102 +47,9 @@ bind "set completion-ignore-case on"
 
     alias df='df -h'
 
-    alias update='sudo apt-get update'
-
     alias home='cd ~'
     alias h='cd ~'
-    alias downloads='cd /cygdrive/g/downloads'
-    alias d='cd /cygdrive/g/downloads'
-    alias comp='cd /cygdrive/z/computers'
-    alias first='cd /cygdrive/z'
-    alias security='cd /cygdrive/g/apps2/DropboxPortableAHK2/Dropbox/security'
-    alias s='cd /cygdrive/g/apps2/DropboxPortableAHK2/Dropbox/security'
-    alias linux='cd /cygdrive/z/computers/linux'
-    alias bashrc='vim /cygdrive/z/home/.bashrc'
-    alias b='vim /cygdrive/z/home/.bashrc'
-    alias proj='cd /cygdrive/z/proj'
-    alias tcl='cd /cygdrive/z/proj/tcl'
-    alias short='cd /cygdrive/z/proj/tcl/runMyShortcut'
-    alias p='cd /cygdrive/z/proj/python'
-    alias temp='cd /cygdrive/g/temp'
-    alias tmep='cd /cygdrive/g/temp'
-    alias mtep='cd /cygdrive/g/temp'
-    alias t='cd /cygdrive/g/temp'
-    alias dom='cd /cygdrive/z/home'
-    alias bin='cd /cygdrive/z/home/bin'
-    alias vimrc='vim /cygdrive/z/home/.vimrc'
-    alias vimplugins='cd /cygdrive/z/home/.vim/bundle'
-    alias vimdir='cd /cygdrive/z/home/.vim'
-    alias startvim='vim --servername MyServer'
-    #alias v='vim --servername MyServer'
-    #alias v='/cygdrive/g/apps/64/vim/vim73/gvim.exe --remote-silent'
-    alias boxcryptor='encfs /cygdrive/g/apps2/DropboxPortableAHK1/Dropbox/docs /cygdrive/z'
-    alias vimrcnone='vim -u NONE'
-    alias standup='cd /cygdrive/g/inne/standup'
-    alias ff='/cygdrive/g/apps2/FirefoxPortable/FirefoxPortable.exe'
-    alias hosts='vim  /cygdrive/z/myhostsfile'
-    alias reference='cd /cygdrive/g/apps2/DropboxPortableAHK2/Dropbox'
-    alias r='cd /cygdrive/g/apps2/DropboxPortableAHK2/Dropbox'
 
-    alias notescomputers='cd /cygdrive/z/computers'
-    alias notesjava='cd /cygdrive/z/computers/java'
-    alias javanotes='cd /cygdrive/z/computers/java'
-    alias notesvim='cd /cygdrive/z/computers/vim'
-    alias vimnotes='cd /cygdrive/z/computers/vim'
-    alias noteslinux='cd /cygdrive/z/computers/linux'
-    alias notesbash='cd /cygdrive/z/computers/bash'
-    alias noteshtml='cd /cygdrive/z/computers/html'
-    alias notesapps='cd /cygdrive/z/computers/apps'
-    alias notesahk='cd /cygdrive/z/computers/autohotkey'
-    alias notesdom='cd /cygdrive/z/computers/dom'
-    alias notesjs='cd /cygdrive/z/computers/javascript'
-    alias notesnetworking='cd /cygdrive/z/computers/networking'
-    alias notesphp='cd /cygdrive/z/computers/php'
-    alias notespython='cd /cygdrive/z/computers/python'
-    alias notesruby='cd /cygdrive/z/computers/ruby'
-    alias notessecurity='cd /cygdrive/z/computers/security'
-    alias notestcl='cd /cygdrive/z/computers/tcl'
-    alias notestk='cd /cygdrive/z/computers/tk'
-    alias noteswindows='cd /cygdrive/z/computers/windows'
-
-    alias projjava='cd /cygdrive/z/proj/java'
-
-    alias pak='7z -pdupajasia -mhe a temp.7z '
-
-    #   alias home='cd ~'
-    #   alias h='cd ~'
-    #   alias downloads='cd /media/truecrypt1/downloads'
-    #   alias d='cd /media/truecrypt1/downloads'
-    #   alias comp='cd /media/truecrypt1/docs/computers'
-    #   alias first='cd /media/truecrypt1/docs'
-    #   alias security='cd /media/truecrypt1/apps2/DropboxPortableAHK2/Dropbox/security'
-    #   alias linux='cd /media/truecrypt1/docs/computers/linux'
-    #   alias bashrc='vim /media/truecrypt1/docs/home/.bashrc'
-    #   alias b='vim /media/truecrypt1/docs/home/.bashrc'
-    #   alias proj='cd /media/truecrypt1/docs/proj'
-    #   alias tcl='cd /media/truecrypt1/docs/proj/tcl'
-    #   alias short='cd /media/truecrypt1/docs/proj/tcl/runMyShortcut'
-    #   alias p='cd /media/truecrypt1/docs/proj/python'
-    #   alias temp='vim  /media/truecrypt1/docs/temp.txt'
-    #   alias tmep='vim  /media/truecrypt1/docs/temp.txt'
-    #   alias mtep='vim  /media/truecrypt1/docs/temp.txt'
-    #   alias t='vim  /media/truecrypt1/docs/temp.txt'
-    #   alias dom='cd /media/truecrypt1/docs/home'
-    #   alias bin='cd /media/truecrypt1/docs/home/bin'
-    #   alias vimrc='vim /media/truecrypt1/docs/home/.vimrc'
-    #   alias vimplugins='cd /media/truecrypt1/docs/home/.vim/bundle'
-    #   alias vimdir='cd /media/truecrypt1/docs/home/.vim'
-    #   alias startvim='vim --servername MyServer'
-    #   #alias v='vim --servername MyServer'
-    #   alias v='vim'
-    #   alias boxcryptor='encfs /media/truecrypt1/apps2/DropboxPortableAHK1/Dropbox/docs /media/truecrypt1/docs'
-    #   alias vimrcnone='vim -u NONE'
-    #   alias standup='cd /media/truecrypt1/inne/standup'
-    #   alias ff='firefox'
-    #   alias hosts='vim  /media/truecrypt1/docs/myhostsfile'
-    #   alias reference='cd /media/truecrypt1/apps2/DropboxPortableAHK2/Dropbox'
-    #   alias r='cd /media/truecrypt1/apps2/DropboxPortableAHK2/Dropbox'
-    #   alias docs='cd /media/truecrypt1/docs'
 
     # typos
     alias exti='exit'
@@ -162,62 +71,25 @@ bind "set completion-ignore-case on"
 
     alias pingl='ping localhost'
 
-    alias "rm=trash"
-    alias "emptytrash=/bin/rm -rf /media/truecrypt1/.trashcan/* /media/truecrypt1/.trashcan/.??*"
     alias 'rm!=/bin/rm -r'
 
     #Make info use vi-like and less-like key bindings:
     alias info='info --vi-keys'
 
+    alias duf='du -sk * | sort -n | perl -ne '\''($s,$f)=split(m{\t});for (qw(K M G)) {if($s<1024) {printf("%.1f",$s);print "$_\t$f"; last};$s=$s/1024}'\'
 
-# functions
 
-    # mkdir and cd at the same time
-    function mkdircd () { mkdir -p "$@" && eval cd "\"\$$#\""; }
 
-    #wcd ()
-    #{
-        #/usr/bin/wcd.exec "$@"
-        #. ${WCDHOME:-${HOME}}/bin/wcd.go
-    #}
-
-    function v() {
-        # cygpath doen't work when you give it non-existant path
-        # so let's use sed
-        #arg=`cygpath -d $1`
-
-        arg=`echo $1 | sed 's|/cygdrive/||g'`
-        arg=`echo $arg | sed 's|/|:\\\|'`
-        arg=`echo $arg | sed 's|/|\\\|g'`
-        #echo \"$arg\"
-
-        /cygdrive/g/apps/64/vim/vim73/gvim.exe --remote-silent "$arg"
-    }
-
-    function g() {
-        #grep -ir "$@" *
-        #ack "$@"
-        ack --smart-case "$@"
-    }
-
-    # Trash support by Matt Carter <m@ttcarter.com
-    # Source and information: http://hash-bang.net/2009/03/trash-with-bash
-    function trash() {
-        if [ -d "/media/truecrypt1/.trashcan/$1" ]; then
-            # Already exists in binaries - remove
-            rm -r "/media/truecrypt1/.trashcan/$1"
-        fi
-        #mv --target-directory=/media/truecrypt1/.trashcan/ -- "$@"
-        mv --target-directory=/cygdrive/g/.trashcan/ -- "$@"
-    }
-
-# Turn off pausing output to screen with C-s coz this conflicts with Bash own
-# shortcut C-s, which is search history forward incrementally (I prefer to have
-# the searching shortcut, I don't suspend often)
-stty -ixon
+# Turn off pausing output to screen with C-s coz this conflicts with
+# Bash own shortcut C-s, which is search history forward
+# incrementally (I prefer to have the searching shortcut, I don't
+# suspend often)
+/bin/stty -ixon
 
 # Auto "cd" when entering just a path
-shopt -s autocd
+#shopt -s autocd
+# (turn it off, confusing, what is there is app with same name as
+# your dir?)
 
 # programmable completion features (you don't need to enable
     # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
@@ -233,33 +105,76 @@ shopt -s autocd
 
 # variables and exports
 
-    if [ -d "${HOME}/bin" ] ; then
-        PATH="${HOME}/bin:${PATH}"
-    fi
-
-    PATH="/cygdrive/g/apps/ant/bin:${PATH}" # ant
-
-    # Append dir with my scripts to PATH (path to binaries):
-    #PATH=${PATH}:/media/truecrypt1/docs/home/bin
-
-    CLASSPATH=.\;${CLASSPATH}
-    CLASSPATH=g:\\apps2\\DropboxPortableAHK2\\Dropbox\\programming\\java\\Thinking_in_java_4_code\;${CLASSPATH}
-
-    export short='G:/apps2/DropboxPortableAHK2/Dropbox/security/docs/proj/tcl/runMyShortcut'
-    export bin='G:/apps2/DropboxPortableAHK2/Dropbox/security/docs/home/bin'
-    export dom='G:/apps2/DropboxPortableAHK2/Dropbox/security/docs/home'
-    export reference='G:/apps2/DropboxPortableAHK2/Dropbox/security'
-    export security='G:/apps2/DropboxPortableAHK2/Dropbox/security'
-    export s='G:/apps2/DropboxPortableAHK2/Dropbox/security'
-    export standup='G:/apps2/DropboxPortableAHK2/Dropbox/security/inne/standup'
-    export music='G:/apps2/DropboxPortableAHK2/Dropbox/security/music'
-    export linux='G:/apps2/DropboxPortableAHK2/Dropbox/security/docs/computers/linux'
-    export first='G:/apps2/DropboxPortableAHK2/Dropbox/security/docs'
-    export vimplugins='G:/apps2/DropboxPortableAHK2/Dropbox/security/docs/home/.vim/bundle'
-
     export TERM="xterm-256color"
 
 # source others stuff
 
+    # better 'cd' e.g.
+    # cd -- (list last 10 dirs)
+    # cd -2 (go to second dir)
     source acd_func.sh
+
+    if [ $(/bin/uname) == "CYGWIN_NT-6.1-WOW64" ]; then
+        source bash_cygwin_settings
+    fi
+
+    if [ $(/bin/uname -n | head -c -1) == "wid7.clear2Pay.com" ]; then
+
+        if [ -e /usr/bin/vimx ]; then alias vim='/usr/bin/vimx'; fi
+        alias weblogic='cd /src/CS/trunk/ofmProfile/domains/soa_domain'
+        alias wg='cd /src/CS/trunk/ofmProfile/domains/soa_domain'
+        alias cs='cd /src/CS/trunk/svn'
+        alias ds='~/dropbox.py status' # dropbox status
+        alias dboracle='cd /src/CS/trunk/svn/setup/Database/oracle'
+        alias dbclean='cd /src/CS/trunk/svn/setup/Database/oracle/ && export ORACLE_SID=bphclient && ./cleanData.sh && export ORACLE_SID=bphmarket && ./cleanData.sh'
+        alias dbupdate='cd /src/CS/trunk/svn/setup/Database/oracle/ && export ORACLE_SID=bphmarket && ./updateDb.sh'
+        alias sql='export EDITOR=vi && export ORACLE_SID=bphmarket && sqlplus "bphadmin/password"' # sqlplus
+        function v() {
+            gvim --remote-silent "$1"
+            wmctrl -a GVIM
+        }
+
+    fi
+
+    if [ $(/bin/uname -n | head -c -1) == "bulls-ThinkPad-T500" ]; then
+        alias docs='cd /media/wbesz/8d0f3e16-3f0c-4efc-9f2d-af5b7f8c7a85/dokumentacja; clear'
+        alias domain='cd /src/CS/trunk/ofmProfile/domains/soa_domain; clear'
+        alias domain2='cd /src/CS/trunk/ofmProfile/domains/soa_domain2; clear'
+        alias domaintemp='cd /src/CS/trunk/ofmProfile/domains/soa_domain_temp; clear'
+        alias weblogic='cd /opt/middleware/soasuite11g/wlserver_10.3; clear'
+        alias wg='cd /opt/middleware/soasuite11g/wlserver_10.3; clear'
+        alias cs='cd /src/CS/trunk/svn; clear'
+        alias trunk='cd /src/CS/trunk/svn; clear'
+        alias cs21='cd /src/CS/branches/CS-2.1-maintenance; clear'
+        alias cs22='cd /src/CS/branches/CS-2.2-maintenance; clear'
+        alias cs23='cd /src/CS/branches/CS-2.3-maintenance; clear'
+        alias cs13='cd /src/CS/branches/CS-1.3-maintenance; clear'
+        #alias ds='~/dropbox.py status; clear' # dropbox status
+        alias dboracle='cd /src/CS/trunk/svn/setup/Database/oracle; clear'
+        alias dbclean='cd /src/CS/trunk/svn/setup/Database/oracle/ && export ORACLE_SID=bphmarket && ./cleanData.sh && export ORACLE_SID=bphclient && ./cleanData.sh'
+        alias dbupdate='cd /src/CS/trunk/svn/setup/Database/oracle/ && export ORACLE_SID=bphmarket && ./updateDb.sh && export ORACLE_SID=bphclient && ./updateDb.sh'
+        alias sql='export EDITOR=vi && export ORACLE_SID=bphmarket && sqlplus "bphadmin/password"' # sqlplus
+        alias 7up='svn up --ignore-externals'
+
+        #export JAVA_HOME=/opt/middleware/soasuite11g/jdk160_29
+        export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
+        export CS22=/src/CS/trunk/svn
+        export CS21=/src/CS/branches/CS-2.1-maintenance
+        export CS13=/src/CS/branches/CS-1.3-maintenance
+
+        export PROMPT_COMMAND='l="`cat /tmp/x`"; exec >/dev/tty; exec > >(tee /tmp/x)'
+        # usage:
+        # find -name .bashrc
+        # ./.bashrc
+        # vi $l
+    fi
+
+
+# colors
+
+    # A green prompt for regular users
+    #PS1='[\u@\h \W]\$ '  # Default
+    PS1='\[\e[1;32m\][\u@\h \W]\$\[\e[0m\] '
+
+
 
