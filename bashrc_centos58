@@ -1,0 +1,57 @@
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+# User specific aliases and functions
+alias 7up='svn update --ignore-externals'
+alias searchhere='find . | xargs grep -sl'
+alias gotocs='cd /src/CS/trunk/svn/'
+
+if [ -d ~/Dropbox/home ]; then
+cd ~/Dropbox/home
+source .bashrc
+fi
+
+if [ -e /usr/bin/vimx ]; then alias vim='/usr/bin/vimx'; fi
+function v() {
+    gvim --remote-silent "$1"
+    wmctrl -a GVIM
+}
+alias domain='cd /src/CS/trunk/ofmProfile/domains/soa_domain; clear'
+alias domain2='cd /src/CS/trunk/ofmProfile/domains/soa_domain2; clear'
+alias domaintemp='cd /src/CS/trunk/ofmProfile/domains/soa_domain_temp; clear'
+alias weblogic='cd /opt/middleware/soasuite11g/wlserver_10.3; clear'
+alias wg='cd /opt/middleware/soasuite11g/wlserver_10.3; clear'
+alias cs='cd /src/CS/trunk/svn; clear'
+alias trunk='cd /src/CS/trunk/svn; clear'
+alias cs21='cd /src/CS/branches/CS-2.1-maintenance; clear'
+alias cs22='cd /src/CS/branches/CS-2.2-maintenance; clear'
+alias cs23='cd /src/CS/branches/CS-2.3-maintenance; clear'
+alias cs13='cd /src/CS/branches/CS-1.3-maintenance; clear'
+#alias ds='~/dropbox.py status; clear' # dropbox status
+alias dboracle='cd /src/CS/trunk/svn/setup/Database/oracle; clear'
+alias dbclean='cd /src/CS/trunk/svn/setup/Database/oracle/ && export ORACLE_SID=bphmarket && ./cleanData.sh && export ORACLE_SID=bphclient && ./cleanData.sh'
+alias dbupdate='cd /src/CS/trunk/svn/setup/Database/oracle/ && export ORACLE_SID=bphmarket && ./updateDb.sh && export ORACLE_SID=bphclient && ./updateDb.sh'
+alias sql='export EDITOR=vi && export ORACLE_SID=bphmarket && sqlplus "bphadmin/password"' # sqlplus
+alias 7up='svn up --ignore-externals'
+alias vdiff="svn diff --diff-cmd gvimdiff-svn-wrapper"
+
+#export JAVA_HOME=/opt/middleware/soasuite11g/jdk160_29
+export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
+export cs=/src/CS/trunk/svn
+export cs21=/src/CS/branches/CS-2.1-maintenance
+export cs22=/src/CS/branches/CS-2.2-maintenance
+export cs23=/src/CS/branches/CS-2.3-maintenance
+export cs13=/src/CS/branches/CS-1.3-maintenance
+export ccs=https://svn-mec.clear2pay.com/svn/repos/cs/trunk
+export ccs21=https://svn-mec.clear2pay.com/svn/repos/cs/branches/CS-2.1-maintenance/
+export ccs22=https://svn-mec.clear2pay.com/svn/repos/cs/branches/CS-2.2-maintenance/
+export ccs23=https://svn-mec.clear2pay.com/svn/repos/cs/branches/CS-2.3-maintenance/
+
+# IMPORTANT!: By default, you're in VI insert mode; press Esc to
+# enter VI command mode (for Ctrl-l and others)
+#set -o vi
+
