@@ -1029,6 +1029,5 @@ au BufEnter trunk.log :g/\t/d
 vnoremap > ><CR>gv
 vnoremap < <<CR>gv
 
-":autocmd BufWritePost * execute '!git add % && git commit -m %'
-":autocmd BufWritePost * execute ':silent Gcommit -am.'
-nnoremap ,co :silent Gcommit -am.
+" ,co will commit current file to git with single dot as comment
+nnoremap <leader>co :silent Gcommit -am.<CR>
