@@ -1,254 +1,3 @@
-cd autohotkey/
-g swap
-g ctrl
-git
-git show
-svn
-cd "$( cygpath -u 'Z:\proj\ahk' )"
-svn
-type svn
-cd "$( cygpath -u 'Z:\home' )"
-passwd.exe 
-passwd.exe 
-cd "$( cygpath -u 'Z:\home' )"
-type password
-type passwd
-generate-password
-cat
-cat .vim
-date +%s | sha256sum | base64 | head -c 12 | tr '[A-Z]' '[a-z]' | sed -e "s/\b\(.\)/\u\1/g" | cb
-date +%s | sha256sum | base64 | head -c 12 | tr '[A-Z]' '[a-z]' | sed -e "s/\b\(.\)/\u\1/g"
-passwd.exe 
-date +%s | sha256sum | base64 | head -c 12 | tr '[A-Z]' '[a-z]' | sed -e "s/\b\(.\)/\u\1/g" | cb
-echo lala | cb
-v cb
-sqlplus
-pwd
-pwd
-pwd
-grep pool
-g pool
-pwd
-g pool
-pwd
-t
-git clone https://github.com/skprasadu/spring-mvc-examples.git
-cygcheck
-cygcheck git
-cygcheck g:
-cygcheck g:\cygwin\bin\git.exe
-cygcheck g:/cygwin/bin/git.exe
-where curl
-t
-git clone https://github.com/skprasadu/spring-mvc-examples.git
-g ManagedBean
-g @Named
-g jsr
-g WebApplication
-t
-cd "$( cygpath -u 'G:\temp\spring-mvc-test-examples\controllers-unittest' )"
-mvn test | less
-mvn test | less
-mvn test | less
-mvn test | less
-mvn test | less
-mvn -Dtest=TodoTest test | less
-mvn -Dtest=TodoTest test | less
-mvn -Dtest=TodoTest test | less
-mvn -Dtest=TodoTest test | less
-mvn -Dtest=TodoTest test | less
-mvn -Dtest=TodoTest -Dlog4j.debug test | less
-mvn -Dlog4j.debug test | less
-mvn -Dlog4j.debug -Dtest=TodoTest test | less
-mvn -X -Dlog4j.debug -Dtest=TodoTest test | less
-mvn -X -Dlog4j.debug test | less
-mvn -X -Dlog4j.debug test | less
-mvn -Dlog4j.debug test | less
-mvn test | less
-mvn test | less
-cd "$( cygpath -u 'G:\temp\captaindebug\facebook' )"
-mvn test
-mvn test | less
-mvn test > testlog
-cd "$( cygpath -u 'G:\temp\captaindebug\facebook' )"
-mvn -Dtest=FacebookPostsControllerTest test
-mvn -Dtest=com.captaindebug.social.facebookposts.mockmvc.configfile.FacebookPostsControllerTest test
-mvn -Dtest=com.captaindebug.social.facebookposts.mockmvc.configfile.FacebookPostsControllerTest test
-mvn clean -Dtest=com.captaindebug.social.facebookposts.mockmvc.configfile.FacebookPostsControllerTest test
-mvn clean -Dtest=com.captaindebug.social.facebookposts.mockmvc.configfile.FacebookPostsControllerTest test
-mvn clean -Dtest=com.captaindebug.social.facebookposts.mockmvc.configfile.FacebookPostsControllerTest test
-mvn clean -Dtest=com.captaindebug.social.facebookposts.mockmvc.configfile.FacebookPostsControllerTest test
-mvn clean -Dtest=com.captaindebug.social.facebookposts.mockmvc.configfile.FacebookPostsControllerTest test > testlog
-t
-mvn -DinteractiveMode=false -DarchetypeGroupId=org.openarchetypes -DarchetypeArtifactId=multi-javaee5-archetype -DarchetypeVersion=0.0.1-SNAPSHOT -DarchetypeRepository=http://open-archetypes.googlecode.com/svn/snapshots-repository/ -DgroupId=net.lucamasini -DartifactId=wls-jee5 -Dversion=1.0-SNAPSHOT archetype:generate
-dir
-cd wls-jee5/
-dir
-ls
-ls
-cd ..
-mvn archetype:generate
-mvn archetype:generate
-    -DarchetypeGroupId=com.oracle.weblogic.archetype
-    -DarchetypeArtifactId=basic-webapp
-    -DarchetypeVersion=12.1.2-0-0
-    -DgroupId=org.mycompany
-    -DartifactId=my-basic-webapp-project
-mvn archetype:generate
-    -DarchetypeGroupId=com.oracle.weblogic.archetype
-    -DarchetypeArtifactId=basic-webapp
-    -DarchetypeVersion=12.1.2-0-0
-    -DgroupId=org.mycompany
-    -DartifactId=my-basic-webapp-project
-    -Dversion=1.0-SNAPSHOT
-mvn archetype:generate -DarchetypeGroupId=com.oracle.weblogic.archetype -DarchetypeArtifactId=basic-webapp -DarchetypeVersion=12.1.2-0-0 -DgroupId=org.mycompany -DartifactId=my-basic-webapp-project -Dversion=1.0-SNAPSHOT
-mvn archetype:generate     -DarchetypeGroupId=com.oracle.weblogic.archetype     -DarchetypeArtifactId=basic-webapp     -DarchetypeVersion=12.1.2-0-0     -DgroupId=org.mycompany     -DartifactId=my-basic-webapp-project     -Dversion=1.0-SNAPSHOT
-t
-dir
-    mvn archetype:generate         -DarchetypeGroupId=com.oracle.weblogic.archetype         -DarchetypeArtifactId=basic-webapp-ejb         -DarchetypeVersion=12.1.2-0-0         -DgroupId=org.mycompany         -DartifactId=my-basic-webapp-ejb-project         -Dversion=1.0-SNAPSHOT 
-j
-java
-jj
-j
-c
-t
-javanotes 
-comp
-javanotes 
-g @SessionScoped
-g '@SessionScoped'
-g "@SessionScoped"
-g SessionScoped
-type g
-ack --smart-case session
-ack --smart-case sessionbean
-H
-h
-pwd
-cd vimfiles/
-git init
-ls autoload/
-ls colors/
-ls ftplugin/
-ls syntax/
-git add ftplugin/ syntax/
-git commit
-git status
-git log
-javanotes 
-g named
-g @named
-svn
-where svn
-t
-mkdir struts_proj1
-cd struts_proj1
-svn co https://svn.apache.org/repos/asf/struts/sandbox/trunk/
-ls
-cd trunk
-ls
-gg pom.xml 
-gg
-type v
-v pom.xml 
-ls
-dir
-ahkd
-ahk
-aa
-a
-computer
-computers
-comp
-proj
-cd ahk/
-git status
-git status
-git add tf.ahk 
-git status
-git commit
-git status
-git commit -a
-git status
-c
-comp
-g xwork
-d
-wget http://www.dzone.com/sites/all/files/Struts2Example19.zip
-curl
-g:\apps\unixutils\wget http://www.dzone.com/sites/all/files/Struts2Example19.zip
-g:/apps/unixutils/wget http://www.dzone.com/sites/all/files/Struts2Example19.zip
-t
-/cygdrive/g/apps/youtube-dl.exe http://www.youtube.com/watch?v=qTAKzSeHtdE
-docs
-doc
-d
-comp
-cd vim
-ls
-for i in $(find . -type f -name "*[A-Z]*"); do echo "$i" "$(echo $i | tr A-Z a-z)"; done
-for i in $(find . -type f -name "*[A-Z]*"); ;
-for i in $(find . -type f -name "*[A-Z]*");
-for i in $(find . -type f -name "*[A-Z]*")
-for i in $(find . -type f -name "*[A-Z]*");
-for i in $(find . -type f -name "*[A-Z]*"); do echo ok; done
-for i in $(find . -type f); do echo ok; done
-for i in $(findd . -type f -name "*[A-Z]*"); do echo "$i" "$(echo $i | tr A-Z a-z)"; done
-ls
-for i in $(findd . -type f -name "*[A-Z]*"); do mv "$i" "$(echo $i | tr A-Z a-z)"; done
-ls
-type mv
-cat BlocksOfText 
-for i in $(findd . -type f -name "*[A-Z]*"); do mv "$i" "$(echo $i | tr A-Z a-z)"; done
-ls
-for i in $(findd . -type f -name "*[A-Z]*"); do echo "$i" "$(echo $i | tr A-Z a-z)"; done
-mv .\BlocksOfText .\blocksoftext
-for i in $(findd `pwd` -type f -name "*[A-Z]*"); do echo "$i" "$(echo $i | tr A-Z a-z)"; done
-ls /cygdrive/z/computers/vi
-ls /cygdrive/z/computers/vim
-findd ls /cygdrive/z/computers/vim
-findd /cygdrive/z/computers/vim
-type findd
-type find
-/cygdrive/g/apps/UnixUtils/find.exe /cygdrive/z/computers/vim
-/cygdrive/g/apps/UnixTools/ /cygdrive/z/computers/vim
-/cygdrive/g/cygwin/bin/find /cygdrive/z/computers/vim
-for i in $(/cygdrive/g/cygwin/bin/find `pwd` -type f -name "*[A-Z]*"); do echo "$i" "$(echo $i | tr A-Z a-z)"; done
-for i in $(/cygdrive/g/cygwin/bin/find `pwd` -type f -name "*[A-Z]*"); do echo "$i" "$(echo $i | tr A-Z a-z)"; done
-for i in $(/cygdrive/g/cygwin/bin/find `pwd` -type f -name "*[A-Z]*"); do echo "$i" "$(echo $i | tr A-Z a-z)"; done
-/cygdrive/g/cygwin/bin/find `pwd`
-for i in $(/cygdrive/g/cygwin/bin/find `pwd` -type f -name "*[A-Z]*"); do echo ok; done
-for i in $(/cygdrive/g/cygwin/bin/find `pwd` -type f -name "*[A-Z]*"); do echo $i; done
-(/cygdrive/g/cygwin/bin/find `pwd` -type f -name "*[A-Z]*"
-(/cygdrive/g/cygwin/bin/find `pwd` -type f -name "*[A-Z]*
-/cygdrive/g/cygwin/bin/find `pwd` -type f -name "*[A-Z]*"
-/cygdrive/g/cygwin/bin/find `pwd` -type f
-for i in $(/cygdrive/g/cygwin/bin/find `pwd` -type f); do echo "$i" "$(echo $i | tr A-Z a-z)"; done
-comp
-cd vim
-ls
-for i in $(/cygdrive/g/cygwin/bin/find `pwd` -type f); do echo "$i" "$(echo $i | tr A-Z a-z)"; done
-for i in $(/cygdrive/g/cygwin/bin/find `pwd` -type f); do mv "$i" "$(echo $i | tr A-Z a-z)"; done
-ls
-type find
-type mv
-for i in $(/usr/bin/find `pwd` -type f); do echo "$i"; done
-/bin/find
-ll /bin
-ll /
-ls
-cd ..
-fin
-find
-/bin/find
-for i in $(/cygdrive/g/cygwin/bin/find `pwd` -type f); do echo "$i" "$(echo $i | tr A-Z a-z)"; done
-for i in $(/cygdrive/g/cygwin/bin/find `pwd`); do echo "$i" "$(echo $i | tr A-Z a-z)"; done
-for i in $(/bin/find `pwd`); do /bin/mv "$i" "$(echo $i | /bin/tr A-Z a-z)"; done
-/bin/find -iname 'checker'
-/bin/find -iname '*.mht'
-/bin/find -iname 'interesting-conver*'
-/bin/find -iname '*dom*'
-/bin/find
 cd nextira/
 ls
 vim my.bat 
@@ -498,3 +247,254 @@ rm
 find plugins/ features/ -iname *mylyn* | xargs rm -r
 find plugins/ features/ -iname *mylyn* | xargs rm
 find plugins/ features/ -iname *mylyn* | xargs 
+ls
+pw
+pwd
+t
+ls
+git clone https://github.com/wojkun/dotfiles.git
+cd dotfiles/
+ls
+ls z:/proj/ahk
+ls -a z:/proj/ahk
+cd home
+h\
+h
+pwd
+ls
+git list
+git status
+git shortlog
+ls -a
+ls .git
+du .git
+du -sh .git
+ls
+git
+pwd
+git remote
+man git-remote
+git remote show
+git remote add origin https://github.com/wojkun/dotfiles.git
+git status
+git add .bashrc .vimrc
+git st
+git stat
+git statu
+git status
+git commit -m ""
+git commit -m "add bashrc and vimrc"
+git status
+git push -u origin master
+git push -u origin master
+git fetch origin
+ls
+ls -a
+vi .bashrc 
+git merge origin branch
+git fetch origin
+git merge origin branch
+git pull origin branch
+git pull --rebase
+git status
+ls
+git branch
+git checkout master
+git commit -a
+git status
+git pull origin branch
+git pull --rebase
+git pull --rebase origin branch
+git merge origin branch
+git push -u origin master
+git ls-files
+git config --list
+git push
+git pull
+git checkout master
+git pull https://github.com/wojkun/dotfiles.git master
+git push origin master
+git pull
+vi .vimrc
+gvim .vimrc
+vim .vimrc
+git status
+git pull origin master
+gvim .vimrc
+everything
+g:\apps\everything\Es -r conflicted copy
+g:/apps/everything/Es -r conflicted copy
+g:/apps/everything/Es -p -r conflicted copy
+g:/apps/everything/Es -p -r Dropbox\docs\ conflicted copy
+g:/apps/everything/Es -p -r Dropbox\docs conflicted copy
+g:/apps/everything/Es -p -r docs conflicted copy
+g:/apps/everything/Es -p -r *docs* conflicted copy
+g:/apps/everything/Es -p -r do conflicted copy
+g:/apps/everything/Es -p dropbox conflicted copy
+g:/apps/everything/Es -p dropbox conflicted copy | xargs
+g:/apps/everything/Es -p dropbox conflicted copy | xargs -n1
+g:/apps/everything/Es -p dropbox conflicted copy | xargs -0
+g:/apps/everything/Es -p dropbox conflicted copy | sed 's/ /NUL/g'
+g:/apps/everything/Es -p dropbox conflicted copy | sed 's/ /NULL/g'
+g:/apps/everything/Es -p dropbox conflicted copy | tr \\n \\0
+g:/apps/everything/Es -p dropbox conflicted copy | sed ':a; s:|\(\\N\)\?|:|NULL|:g; ta'
+g:/apps/everything/Es -p dropbox conflicted copy | sed ':a; s:|\(\\N\)\?|:|NULL|:g; ta' | xargs -0
+g:/apps/everything/Es -p dropbox conflicted copy | sed ':a; s:|\(\\N\)\?|:|NULL|:g; ta' | xargs -0 -n1 echo
+g:/apps/everything/Es -p dropbox conflicted copy | sed ':a; s:|\(\\N\)\?|:|NULL|:g; ta' | xargs -0 -n1 echo LALA
+g:/apps/everything/Es -p dropbox conflicted copy | sed ':a; s:|\(\ \)\?|:|NULL|:g; ta' | xargs -0 -n1 echo LALA
+g:/apps/everything/Es -p dropbox conflicted copy | sed ':a; s:|\(\\N\)\?|:|NULL|:g; ta' | xargs -0 -n1 echo LALA
+g:/apps/everything/Es -p dropbox conflicted copy | tr '\n' ' ' | xargs -0 -n1 echo LALA
+g:/apps/everything/Es -p dropbox conflicted copy | tr '\n' '\0' | xargs -0 -n1 echo LALA
+g:/apps/everything/Es -p dropbox conflicted copy | tr '\n' '\0' | xargs -0 -n1 echo LALA | wc
+g:/apps/everything/Es -p dropbox conflicted copy | tr '\n' '\0' | xargs -0 -n1 echo LALA | wc -l
+g:/apps/everything/Es -p dropbox conflicted copy | tr '\n' '\0' | xargs -0 -n1 | wc -l
+g:/apps/everything/Es -p dropbox conflicted copy | tr '\n' '\0' | xargs -0 -n1 wc -l
+g:/apps/everything/Es -p dropbox conflicted copy | tr '\n' '\0' | xargs -0 -n1 | wc -l
+bash /cygdrive/z/proj/others/bash/find_conflicted_files.sh
+g:/apps/everything/Es -p dropbox conflicted copy | tr '\n' '\0'
+g:/apps/everything/Es -p dropbox conflicted copy | tr '\n' '\0' | xargs
+g:/apps/everything/Es -p dropbox conflicted copy | tr '\n' '\0' | xargs -0
+g:/apps/everything/Es -p dropbox conflicted copy | tr '\n' '\0' | xargs -0 | wc
+g:/apps/everything/Es -p dropbox conflicted copy
+g:/apps/everything/Es -p dropbox conflicted copy | tr '\n' '\0' | xargs -0 -n1
+g:/apps/everything/Es -p dropbox conflicted copy | tr '\n' '\0' | xargs -0 -n1 | wc
+svn
+du -sh
+pwd
+du -sh /cygdrive/g
+pwd
+git
+git st
+git status
+git commit -a
+git commit -a
+git st
+git status
+git add find_conflicted.ahk 
+git commit
+git status
+mysql
+ls g:
+ls g:/
+ls g:/mysql
+ls g:/mysql/bin/mysql
+g:/mysql/bin/mysql
+git commit
+git commit -a
+git commit -a
+gist status
+git status
+git list
+git --help
+git show
+pwd
+git status
+git status my_shortcuts.ahk 
+git log my_shortcuts.ahk 
+git diff my_shortcuts.ahk 
+git showrlog my_shortcuts.ahk
+git showtlog my_shortcuts.ahk
+git shortlog my_shortcuts.ahk
+git log --verbose my_shortcuts.ahk
+git
+git log
+git help
+git help log
+git log --full-diff my_shortcuts.ahk
+git help log
+git log --full-diff --raw my_shortcuts.ahk
+git diff --cached my_shortcuts.ahk
+git-diff
+git diff -p my_shortcuts.ahk
+git log -p my_shortcuts.ahk
+git log -p my_shortcuts.ahk
+git commit
+git commit -a
+git log -p my_shortcuts.ahk
+git diff stat
+git diff --stat
+vimdiff 
+git difftool
+vim
+vim
+vimdiff
+vimdiff
+vimdiff
+vimdiff
+vimdiff
+vim
+git diff --name-only
+vim -p `git diff --name-only`
+git mergetool
+git difftool
+g:/apps/everything/es
+git mergetool
+git difftool
+git difftool
+git difftool
+git diff --name-only
+git diff
+git difftool
+git difftool
+git
+git status
+git diff
+git difftool
+vim
+gvim
+vimdiff
+git difftool
+git difftool
+git difftool
+git difftool
+t
+git clone https://github.com/softexploration/lab.git
+ls
+ls lab
+cd lab
+ls
+cd com.softexploration.lab.ejbspring.transfer.build/
+mvn package
+ls
+clear
+ls
+set
+set | ls
+clear
+ls
+set
+set | ls
+set | less
+ls ~/
+ls -a ~/
+vim ~/.bashrc 
+clear
+cls
+clear
+dir
+ls
+cls
+clear
+ls
+ls
+bash --version
+echo $LS_COLORS
+ls
+exit
+t
+ls
+cd javaee7-angular/
+ls
+ls
+ls target/
+mvn clean package
+g:/apps/maven/bin/maven.bat
+g:/apps/maven/bin/mvn.bat
+g:/apps/maven/bin/mvn.bat pacakge
+g:/apps/maven/bin/mvn.bat pacakge
+g:/apps/maven/bin/mvn.bat pacakge
+g:/apps/maven/bin/mvn.bat package
+g:/apps/maven/bin/mvn.bat clean package
+gvim pom.xml 
+gg pom.xml 
+v pom.xml 

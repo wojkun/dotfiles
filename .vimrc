@@ -275,15 +275,15 @@ if has("gui_running")
         ":echo 'lalababba'
         nmap <a-q> :e ~/Dropbox/unsorted/temp.txt<cr>
         nmap <a-1> :e ~/private/bulls/bulls.txt<cr>
-        nmap <a-F5> :e ~/Dropbox/bulls/CSIDEV-2048<cr>
-        nmap <a-F6> :e /tmp/trunk.log<cr>
+        nmap <a-F5> :e ~/Dropbox/bulls/CSIDEV-2082<cr>
+        nmap <a-F6> :e ~/.vimrc<cr>
         nmap <a-F9> :e ~/Dropbox/home/.bashrc<cr>
         nmap <a-F11> :e ~/Dropbox/unsorted/skrawki.txt<cr>
         nmap <a-F12> :e ~/Dropbox/unsorted/pua.txt<cr>
         nmap <a-d> :bd<cr>
         nmap <a-a> :fin 
         ":set path=**
-        :set path=~/Dropbox/computers/**
+        :set path=~/Dropbox/computers/**,~/private/bulls/**,~/Dropbox/unsorted/**
     elseif has('unix')
         "au GUIEnter * simalt ~x  " start gVim maximized
         autocmd GUIEnter * silent !wmctrl -r :ACTIVE: -b add,maximized_vert,maximized_horz
@@ -421,12 +421,15 @@ endf
 "nmap <s-Space> a_<Esc>r
 
 " (moje) do normal paste, but before that insert space
-nmap <a-p> a<Space><Esc>p
+nmap <leader>p a<Space><Esc>p
 
 " push current line down (cursor moves together with the line)
 nmap <s-space> _i<Enter><Esc>
 " push current line down (cursor stays in the same screen position)
 nmap <c-space> ko<Esc>
+
+" go to top of file, paste and reindent
+nmap ,a <Esc>ggi<Enter><Enter><Esc>gg"+pQ
 
 " surround the word under cursor in ()
 nmap <leader>9 ysiw)
@@ -456,7 +459,7 @@ nnoremap <leader>q @q
   "autocmd bufwritepost _vimrc source $MYVIMRC
 "endif
 
-" Use Q for formatting the current paragraph (or selection)
+" Format current paragraph (or selection)
 "vmap Q gq
 nmap <F10> gqap
 
@@ -519,13 +522,12 @@ map <F3> :bp<cr>
 nmap <silent> ,da :exec "1," . bufnr('$') . "bd"<cr>"}}}
 "}}}
 
-"make the tab key match bracket pairs, a hell of a lot easier to type
+"make tab key match bracket pairs, a hell of a lot easier to type
 "than % (this breaks Tab, which is: jump to newer position)
 "nnoremap <tab> %
 "vnoremap <tab> %
 
-"I use ,W to mean "strip all trailing whitespace in the current file"
-"so I can clean things up quickly:
+" strip all trailing whitespace in the current file
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 
 " Select just-pasted text
@@ -592,7 +594,7 @@ xmap #  \?<CR>
 "
 nnoremap \zz  :let &scrolloff=999-&scrolloff<CR>
 
-" Quickfix {{{
+" Quickfix window {{{
 
 "Open a quickfix window with the most recent search
 nnoremap <silent> ,/ :execute 'vimgrep /'.@/.'/g %'<CR>:copen<CR>
@@ -661,7 +663,8 @@ noremap <leader>l :g/.\n\*/nu<CR>
 ":set cursorline
 "}}}
 " F7 handlers {{{
-" set mark y, copy whole word, return to mark y
+" copy whole word
+" (set mark y, copy whole word, return to mark y)
 :noremap <f7> my"+yiW`y
 
 " exec compiler on current file(%)
@@ -669,16 +672,20 @@ noremap <leader>l :g/.\n\*/nu<CR>
 :noremap <s-f7> : !java "%:t:r"<CR><CR>
 
 ":vnoremap <f7> :!python %<CR>
-:noremap <f11> :!javac "%"<CR><CR>
 
 "}}}
 " F8 handlers {{{
-" set mark y, copy whole line, return to mark y
+" copy line
+" (set mark y, copy whole line, return to mark y)
 :map <f8> my"+yil`y
 "}}}
 " F9 handlers {{{
-" set mark y, copy whole paragraph, return to mark y
+" copy paragraph
+" (set mark y, copy whole paragraph, return to mark y)
 :map <f9> my"+yip`y
+"}}}
+" F11 handlers {{{
+:noremap <f11> :!javac "%"<CR><CR>
 "}}}
 ":noremap <C-l> :CtrlPBuffer<CR>"{{{
 
@@ -729,7 +736,7 @@ cnoremap kj <Esc>
 ":cd $DOCS//first//computers
 if has("win32unix")
     " Do something only in Cygwin
-    :cd /cygdrive/z/computers
+    :cd /cygdrive/g/Dropbox/computers
 elseif has('unix')
     if hostname  ==? 'localhost.localdomain'
         :cd /home/user/visible/docs/computers
@@ -1016,3 +1023,12 @@ au FileType log setlocal nowrap
 au BufEnter trunk.log :g/\t/d
 
 :let VCSCommandVCSTypePreference = "svn"
+
+" Make indenting and unindenting in visual mode retain the selection so
+" you don't have to re-select or type gv every time.
+vnoremap > ><CR>gv
+vnoremap < <<CR>gv
+
+":autocmd BufWritePost * execute '!git add % && git commit -m %'
+":autocmd BufWritePost * execute ':silent Gcommit -am.'
+nnoremap ,co :silent Gcommit -am.

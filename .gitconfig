@@ -1,3 +1,10 @@
 [user]
 	name = ja
 	email = myemail@yahoo.com
+[diff]
+    tool = kdiff3
+[merge]
+    tool = kdiff3
+[mergetool "kdiff3"]
+    path = C:/Program Files/KDiff3/kdiff3.exe
+
